@@ -1,7 +1,11 @@
-[my-aws-group]
+[myawsgroup]
 172.31.34.186
 172.31.35.15
 
-[my-vbox-group]
+[myvboxgroup]
 192.168.0.108
 192.168.0.109
+
+[myawsgroup:vars]
+myubuntu = apache2
+myredhat = httpd
