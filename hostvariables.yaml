@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: [myawsgroup]
   become: yes
   tasks:
   - name: I want to install webserver by using variables in ubuntu machine
