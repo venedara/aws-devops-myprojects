@@ -5,7 +5,7 @@
   - name: i want to install apache in ubuntu
     apt: 
       name: apache2
-      state: 
+      state: present
       
   -   name: i want to start the apache2
       service: 
