@@ -20,7 +20,7 @@
     when: ansible_os_family == "RedHat"
   - name: I want to start webserver in Redhat machine.
     service:
-      name: "{{amyredhat}}"
+      name: "{{myredhat}}"
       state: restarted
     when: ansible_os_family == "RedHat" 
 
