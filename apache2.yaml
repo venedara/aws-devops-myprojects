@@ -7,8 +7,7 @@
       name: apache2
       state: present
       
-  -   name: i want to start the apache2
-      service: 
-        name: apache2
-        enabled: yes
-        start: started
+  - name: i want to start the apache2
+    service: 
+      name: apache2
+      start: started
