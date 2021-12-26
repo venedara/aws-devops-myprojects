@@ -4,23 +4,23 @@
   tasks:
   - name: I want to install webserver by using variables in ubuntu machine
     apt:
-      name: {{myubuntu}}
+      name: "{{myubuntu}}"
       state: present
     when: ansible_os_family == "Debian"
   - name: I want to start the webserver on ubuntu machine.
     service:
-      name: {{myubuntu}}
+      name: "{{myubuntu}}"
       state: restarted
     when: ansible_os_family == "Debian"
 
   - name: I want to install webserver by using variable in Reshat machine.
     yum:
-      name: {{myredhat}}
+      name: "{{myredhat}}"
       state: present
     when: ansible_os_family == "RedHat"
   - name: I want to start webserver in Redhat machine.
     service:
-      name: {{amyredhat}}
+      name: "{{amyredhat}}"
       state: restarted
     when: ansible_os_family == "RedHat" 
 
