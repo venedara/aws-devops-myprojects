@@ -1,0 +1,13 @@
+---
+- hosts: 172.31.34.186
+  become: yes
+  tasks:
+  - name: i want to install apache in ubuntu
+    apt: 
+      name: apache2
+      state: 
+      
+  -   name: i want to start the apache2
+      service: 
+        name: apache2
+        start: started
