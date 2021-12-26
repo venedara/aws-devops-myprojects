@@ -10,4 +10,4 @@
   - name: i want to start the apache2
     service: 
       name: apache2
-      start: started
+      state: started
