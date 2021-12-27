@@ -2,13 +2,13 @@
 - hosts: 172.31.34.186
   become: yes
   vars:
-  myvars1: git
-  myvars2: tree
+    myvars1: git
+    myvars2: tree
   tasks:
-  - name: install git
-    apt:  
-      name: "{{myvars1}}"
-      state: present
-  - name: display variable details
-    debug:
-      msg: "{{myvars1}}"
+    - name: install git
+      apt:  
+        name: "{{myvars1}}"
+        state: present
+    - name: display variable details
+      debug:
+        msg: "{{myvars1}}"
