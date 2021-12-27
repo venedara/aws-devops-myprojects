@@ -1,5 +1,5 @@
 ---
-hosts: 
+hosts: 172.31.34.186
 bcome: yes
 vars:
   myvars1: git
