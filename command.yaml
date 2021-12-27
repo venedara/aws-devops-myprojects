@@ -9,3 +9,15 @@
   - name: i want to display the task 1 result
     debug:
       msg: "{{myvar01}}"
+  
+  - name: I want to install git
+    apt: 
+      name: git
+      state: present
+    when: mybar01.stderr ==""
+
+  - name: i want to install tree in ubuntu.
+    apt: 
+      name: tree
+      state: present
+    when: myvar01.stderr !=""
