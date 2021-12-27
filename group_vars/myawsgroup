@@ -1,3 +1,6 @@
 ---
 myubuntu : apache2
 myredhat : httpd
+
+myubuntujava: openjdk-8-jre
+myredhatjava: java-1.8.0-openjdk
