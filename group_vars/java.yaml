@@ -1,0 +1,15 @@
+---
+- hosts: [myawsgroup]
+  become: yes
+  tasks: 
+  - name: I want to install java in ubuntu machine
+    apt: 
+      name: {{myubuntujava}}
+      state: present
+    when: ansible_os_family == "Debian"
+
+  - name: I want to install java in Redhat
+    yum:
+      name: {{myredhatjava}}
+      state: present
+    when: ansible_os_family == "RedHat"
