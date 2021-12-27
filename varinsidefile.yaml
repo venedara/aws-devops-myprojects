@@ -1,10 +1,10 @@
 ---
-hosts: 172.31.34.186
-bcome: yes
-vars:
+- hosts: 172.31.34.186
+  become: yes
+  vars:
   myvars1: git
   myvars2: tree
-tasks:
+  tasks:
   - name: install git
     apt:  
       name: "{{myvars1}}"
