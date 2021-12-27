@@ -5,15 +5,15 @@
   - name: i want to install git
     apt:
       name: git
-      state: absent
+      state: present
     
   - name: i want to install apache2
     apt: 
       name: apache2
-      state: absent
+      state: presnt
 
   - name: i want to install tree
     apt: 
       name: tree
-      state: absent
+      state: present
 
