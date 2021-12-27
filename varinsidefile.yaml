@@ -1,0 +1,14 @@
+---
+hosts: 
+bcome: yes
+vars:
+  myvars1: git
+  myvars2: tree
+tasks:
+  - name: install git
+    apt:  
+      name: "{{myvars1}}"
+      state: present
+  - name: display variable details
+    debug:
+      msg: "{{myvars1}}"
