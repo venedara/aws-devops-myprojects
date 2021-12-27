@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.34.186
+  become: yes
+  tasks: 
+  - name: i want to install command in ubuntu machine.
+    command: hostname -f
+    register: myvar01
+
+  - name: i want to display the task 1 result
+    debug:
+      msg: "{{myvar01}}"
