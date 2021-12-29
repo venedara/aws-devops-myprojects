@@ -1,0 +1,43 @@
+---
+- name: Give tomcat ownership to the folder
+  file:
+    path: /home/venedara1/opt/tomcat
+    recurse: yes
+    owner: tomcat
+    group: tomcat
+    state: directory
+
+- name: Give read acess to conf file under /opt/tomcat
+  file: 
+    path: /home/venedara1/opt/tomcat/conf
+    recurse: yes
+    mode: g+r
+    state: directory
+
+- name: make the tomcat user as owner of webapps
+  file: 
+    path: /home/venedara1/opt/tomcat/webapps
+    recurse: yes
+    owner: tomcat
+    state: directory
+
+- name: make the tomcat user as owner of webapps
+  file: 
+    path: /home/venedara1/opt/tomcat/work
+    recurse: yes
+    owner: tomcat
+    state: directory
+
+- name: make the tomcat user as owner of webapps
+  file: 
+    path: /home/venedara1/opt/tomcat/temp
+    recurse: yes
+    owner: tomcat
+    state: directory
+
+- name: make the tomcat user as owner of webapps
+  file: 
+    path: /home/venedara1/opt/tomcat/logs
+    recurse: yes
+    owner: tomcat
+    state: directory

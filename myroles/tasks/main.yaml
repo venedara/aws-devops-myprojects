@@ -1,0 +1,8 @@
+---
+# tasks file for myroles
+- include_tasks: Install_jave.yaml
+- include_tasks: tomcat_user.yaml
+- include_tasks: install_tomcat.yaml
+- include_tasks: permissions.yaml
+- include_tasks: servicefile.yaml
+- include_tasks: starttomcat.yaml

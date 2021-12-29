@@ -1,0 +1,6 @@
+---
+- name: copy the from service file to server side
+  template:
+    src:  mytemplates/tomcatservicefile.j2
+    dest: /etc/systemd/system/tomcat.service
+    
