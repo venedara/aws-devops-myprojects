@@ -7,3 +7,8 @@
   apt:
     name: default-jdk
     state: present
+
+- name: Instal java Jre
+  apt:
+    name: default-jre
+    state: present
