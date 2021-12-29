@@ -1,6 +1,6 @@
 ---
 - name: copy the from service file to server side
   template:
-    src:  mytemplates/tomcatservicefile.j2
+    src:  /home/ramesh/aws-devops-myprojects/myroles/tasks/mytemplates/tomcatservicefile.j2
     dest: /etc/systemd/system/tomcat.service
     
