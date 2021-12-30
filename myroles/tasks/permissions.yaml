@@ -1,7 +1,7 @@
 ---
 - name: Give tomcat ownership to the folder
   file:
-    path: /home/ubuntu/opt/tomcat
+    path: /opt/tomcat
     recurse: yes
     owner: tomcat
     group: tomcat
@@ -9,35 +9,35 @@
 
 - name: Give read acess to conf file under /opt/tomcat
   file: 
-    path: /home/ubuntu/opt/tomcat/conf
+    path: /opt/tomcat/conf
     recurse: yes
     mode: g+r
     state: directory
 
 - name: make the tomcat user as owner of webapps
   file: 
-    path: /home/ubuntu/opt/tomcat/webapps
+    path: /opt/tomcat/webapps
     recurse: yes
     owner: tomcat
     state: directory
 
 - name: make the tomcat user as owner of webapps
   file: 
-    path: /home/ubuntu/opt/tomcat/work
+    path: /opt/tomcat/work
     recurse: yes
     owner: tomcat
     state: directory
 
 - name: make the tomcat user as owner of webapps
   file: 
-    path: /home/ubuntu/opt/tomcat/temp
+    path: /opt/tomcat/temp
     recurse: yes
     owner: tomcat
     state: directory
 
 - name: make the tomcat user as owner of webapps
   file: 
-    path: /home/ubuntu/opt/tomcat/logs
+    path: /opt/tomcat/logs
     recurse: yes
     owner: tomcat
     state: directory
