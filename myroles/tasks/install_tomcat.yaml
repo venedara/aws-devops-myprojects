@@ -11,11 +11,10 @@
     path: /opt/tomcat
     state: directory
     
-- name: Extract foo.tgz into /var/lib/foo
-  unarchive:
-    src: /tmp/apache-tomcat-8.5.5.tar.gz
-    dest: /opt/tomcat
-    remote_src: yes
+- name: extract and copy the tomcat file
+  command:
+    cmd: sudo tar xzvf /tmp/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENCE
+
     
  
