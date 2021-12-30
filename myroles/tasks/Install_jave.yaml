@@ -6,6 +6,6 @@
 - name: Instal java JDK
   apt:
     name: default-jdk
-    state: latest
+    state: present
 
 
