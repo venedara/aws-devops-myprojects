@@ -1,6 +1,5 @@
 ---
 - name: start the tomcat
-  become: yes
   systemd:
     name: tomcat
     state: started
